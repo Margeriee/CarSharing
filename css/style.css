@@ -2,146 +2,189 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  .container {
-    width: 1088px;
+}
+
+.container {
+    width: 85%;
     margin: 0 auto;
-  }
-    .hero {
-    background-image: url(../images/Image.png);
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)),
+        url(../images/Image.png);
     background-size: cover;
     background-position: center;   
     height: 807px;
     position: relative;
-  }
+}
 
-  .header {
-      background: rgba(0,0,0,0.4);
-  }
+.header {
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    padding: 0 7%;
+}
 
-  .header__containter {
-      display: flex;
-      justify-content: space-between;
-      height: 90px;
-      align-items: center;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: bolder;
-  }
-  .header__nav__list {
-      display: flex;
-  }
-  .header__nav__list li a {
-      color: white;
-      text-decoration: none;
-      padding: 38px;
-      text-transform: uppercase;
-  }
-  .header__nav__list li a:hover {
-      background-color: #FFFFFF33;
-  }
+.header__nav__list {
+    display: flex;
+}
 
-  .header__logo__picture {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #FFFFFF;
-  }
-  .header__logo__name {
-      font-size: 35px;
-      padding: 10px;
-  }
+.header__nav__list li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 34px 30px;
+}
 
-  .logo__car {
-      color: #FF0000
-  }
+.header__nav__list li a:hover {
+    background-color: #FFFFFF33;
+}
 
-  .arrow {
-      background: #FF0000;
-      width: 55px;
-      height: 55px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      bottom: 30px;
-  }
+.header__logo__picture {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
+.header__logo__name {
+    font-size: 35px;
+    padding: 10px;
+}
 
-  .banner {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 70%;
-      color: white;
-  }
-  h1 {
-      color: white;
-      text-transform: uppercase;
-      font: normal normal 900 90px/90px Nunito Sans;
-      font-weight: black;
-      font-size: 90px;
-      padding: 15px;
-  }
-  .banner__text {
-      text-align: center;
-      font: normal normal 16px/22px Nunito Sans;
-      padding: 15px;
-  }
-  .banner__buttons button {
-      display: inline-block;
-      padding: 20px 60px;
-      border-radius: 40px;
-      margin: 10px;
-      text-transform: uppercase;
-      font-size: 16px;
-  }
-  .banner__buttons__first {
-      background: #FF0000;
-      color: white;
-      border: unset;
-  }
-  .banner__buttons__second {
+.logo__car {
+    color: #FF0000
+}
+
+.arrow {
+    background: #FF0000;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font: normal normal 900 90px/90px Nunito Sans;
+    font-weight: black;
+    font-size: 90px;
+    padding: 15px;
+}
+
+.banner__text {
+    text-align: center;
+    font: normal normal 16px/22px Nunito Sans;
+    padding: 15px;
+}
+
+.banner__buttons button {
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 40px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.banner__buttons__first {
+    background: #FF0000;
+    color: white;
+    border: unset;
+}
+
+.banner__buttons__second {
     background: white;
     color: #FF0000;
     border: unset;
 }
-.main__container {
+
+.blog__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 580px;
 }
-.main__container__article {
+
+.blog__container__article {
     display: flex;
 }
-.blog {
+
+h2 {
     text-transform: uppercase;
     font: normal normal bold 35px/47px Nunito Sans;
     display: flex;
     align-items: center;
-}
-.blog div {
-    padding: 10px 20px;
+    margin-bottom: 45px;
 }
 
-.blog:before {content: ""; display: block; height: 3px; width: 50px; background: red}
-.blog:after {content: ""; display: block; height: 3px; width: 50px; background: red}
+h2:before {
+    content: ""; 
+    display: block; 
+    height: 3px; 
+    width: 50px; 
+    background: red; 
+    margin: 0 20px
+}
+
+h2:after {
+    content: ""; 
+    display: block; 
+    height: 3px; 
+    width: 50px; 
+    background: red; 
+    margin: 0 20px
+}
+
+.blog__container__article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__container__article__blog {
+    margin: 0 10px;
+    width: 30%;
+}
+
+.blog__image img {
+    width: 100%;
+}
 
 .blog__title {
     font: normal normal normal 19px/26px Nunito Sans;
     padding: 10px 0;
     color: #6A6A6A;
 }
+
 .blog__text {
     font: normal normal 300 14px/19px Open Sans;
     color: #6A6A6A;
 }
+
 .blog__button {
     background: #FF0000;
     padding: 10px 25px;
@@ -153,15 +196,17 @@
     box-shadow: 0px 3px 6px #FF00004D
 }
 
-
 .service-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     height: 654px;
     background-color: #28272C;
+}
+
+.service {
+    color: white;
 }
 
 .service-section__container {
@@ -175,35 +220,23 @@
     align-items: center;
     color: white;
     padding: 0 20px;
+    width: 24%;
 }
 
 .service-section__article img {
-    height: 170px;
-    width: 170px;
-}
-
-.service {
-    margin-bottom: 60px;
-    color: white;
-    text-transform: uppercase;
-    font: normal normal bold 35px/47px Nunito Sans;
-    display: block;
-    display: flex;
-    align-items: center;
-}
-
-.service:before {content: ""; display: block; height: 3px; width: 50px; background: red; margin: 0 20px}
-.service:after {content: ""; display: block; height: 3px; width: 50px; background: red; margin: 0 20px}
-
-.service-section__article p {
-    text-align: center;
-    font: normal normal normal 14px/19px Open Sans;
+    width: 80%;
 }
 
 .service-section__article h3 {
     font: normal normal normal 19px/26px Nunito Sans;
     margin: 10px 0;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.service-section__article p {
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
 }
 
 .service-section__article button {
@@ -217,8 +250,6 @@
     color: white;
     margin-top: 20px;
 }
-
-
 
 .container__form {
     width: 900px;
@@ -237,25 +268,9 @@
     display: flex;
 }
 
-.contact {
-        margin-bottom: 40px;
-        margin-top: -60px;
-        text-transform: uppercase;
-        font: normal normal bold 35px/47px Nunito Sans;
-        display: block;
-        display: flex;
-        align-items: center;
-}
-
-.contact:before {content: ""; display: block; height: 3px; width: 50px; background: red; margin: 0 20px}
-.contact:after {content: ""; display: block; height: 3px; width: 50px; background: red; margin: 0 20px}
-    
-.contact-section__container form {
+.contact-section__form form {
     display: flex;
     flex-direction: column;
-}
-
-.contact-section__form form {
     width: 450px;
     position: relative;
     margin-left: 30px;
@@ -298,7 +313,6 @@ textarea {
 
 input[type="checkbox"] {
     appearance: none;
-
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
@@ -314,7 +328,6 @@ input[type="checkbox"]:checked {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 
 input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
     font: normal normal normal 16px/22px Nunito Sans;
@@ -333,7 +346,6 @@ form p {
 .checkbox {
     display: flex;
 }
-
 
 .footer {
     background-color: #28272C;
