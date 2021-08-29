@@ -1,0 +1,703 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Image.png);
+  background-size: cover;
+  background-position: center;
+  height: 807px;
+  position: relative;
+}
+
+h2 {
+  text-transform: uppercase;
+  font: normal normal bold 35px/47px Nunito Sans;
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+h2:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: red;
+  margin: 0 20px;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: red;
+  margin: 0 20px;
+}
+
+@media all and (max-width: 800px) {
+  h2 {
+    text-transform: uppercase;
+    font: normal normal bold 25px/30px Nunito Sans;
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+    margin-bottom: 0;
+  }
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  padding: 0 5%;
+}
+
+.header__nav__list {
+  display: flex;
+}
+
+.header__nav__list li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 29px 20px;
+}
+
+.header__nav__list li a:hover {
+  background-color: #FFFFFF33;
+}
+
+.header__logo__picture {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header__logo__name {
+  font-size: 35px;
+  padding: 10px;
+}
+
+.logo__car {
+  color: #FF0000;
+}
+
+.arrow {
+  background: #FF0000;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 30px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font: normal normal 900 90px/90px Nunito Sans;
+  font-weight: black;
+  font-size: 90px;
+  padding: 15px;
+}
+
+.banner__text {
+  text-align: center;
+  font: normal normal 16px/22px Nunito Sans;
+  padding: 15px;
+}
+
+.banner__buttons button {
+  display: inline-block;
+  padding: 20px 60px;
+  border-radius: 40px;
+  margin: 50px 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.banner__buttons__first {
+  background: #FF0000;
+  color: white;
+  border: unset;
+}
+
+.banner__buttons__second {
+  background: white;
+  color: #FF0000;
+  border: unset;
+}
+
+@media all and (max-width: 800px) {
+  .header {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    align-items: flex-start;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    padding: 0 5%;
+  }
+  .header__logo {
+    margin-bottom: 15px;
+  }
+  .header__nav {
+    align-self: center;
+  }
+  .header__nav__list {
+    display: flex;
+  }
+  .header__nav__list li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px 10px;
+    margin-top: 10px;
+  }
+  .header__nav__list li a:hover {
+    background-color: #FFFFFF33;
+  }
+  .header__logo__picture {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .header__logo__name {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .logo__car {
+    color: #FF0000;
+  }
+  .arrow {
+    background: #FF0000;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    color: white;
+  }
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    font: normal normal 900 50px/60px Nunito Sans;
+    font-weight: black;
+    padding: 15px;
+    text-align: center;
+  }
+  .banner__text {
+    text-align: center;
+    font: normal normal 16px/22px Nunito Sans;
+    padding: 15px;
+  }
+  .banner__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner__buttons button {
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 40px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .banner__buttons__first {
+    background: #FF0000;
+    color: white;
+    border: unset;
+  }
+  .banner__buttons__second {
+    background: white;
+    color: #FF0000;
+    border: unset;
+  }
+}
+
+.blog__container {
+  margin-bottom: 30px;
+}
+
+.blog__container__article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__container__article__blog {
+  margin: 0 10px;
+  width: 30%;
+}
+
+.blog__image img {
+  width: 100%;
+}
+
+.blog__title {
+  font: normal normal normal 19px/26px Nunito Sans;
+  padding: 10px 0;
+  color: #6A6A6A;
+}
+
+.blog__text {
+  font: normal normal 300 14px/19px Open Sans;
+  color: #6A6A6A;
+}
+
+.blog__button {
+  background: #FF0000;
+  padding: 10px 25px;
+  border-radius: 40px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  box-shadow: 0px 3px 6px #FF00004D;
+}
+
+.blog__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 580px;
+}
+
+.blog__container__article {
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+  .blog__container {
+    height: auto;
+  }
+  .blog__container__article {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .blog__container__article__blog {
+    margin: 0 0 25px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog__image img {
+    width: 190px;
+  }
+  .blog__text {
+    text-align: center;
+  }
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 654px;
+  background-color: #28272C;
+}
+
+.service {
+  color: white;
+}
+
+.service-section__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-section__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  width: 24%;
+}
+
+.service-section__article img {
+  width: 80%;
+}
+
+.service-section__article h3 {
+  font: normal normal normal 19px/26px Nunito Sans;
+  margin: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service-section__article p {
+  text-align: center;
+  font: normal normal normal 14px/19px Open Sans;
+}
+
+.service-section__article button {
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  background-color: #FF0000;
+  color: white;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 800px) {
+  .service-section {
+    height: auto;
+    padding: 20px 0;
+  }
+  .service-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .service-section__article {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 0;
+    width: 80%;
+  }
+  .service-section__article img {
+    width: 80px;
+  }
+  .service-section__article h3 {
+    font: normal normal normal 15px/17px Nunito Sans;
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .service-section__article p {
+    text-align: center;
+    font: normal normal normal 12px/14px Open Sans;
+  }
+}
+
+.contact-section {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 40px 0 100px 0;
+  width: 100%;
+}
+
+.contact-section__form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-section__form img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-section__form form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  position: relative;
+  margin-left: 30px;
+}
+
+.contact-section__container button {
+  padding: 10px 50px;
+  border-radius: 40px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: 2px solid #FF0000;
+  background-color: white;
+  color: #FF0000;
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+}
+
+input[type="text"], input[type="email"] {
+  margin-bottom: 10px;
+  height: 38px;
+  width: 100%;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+
+textarea {
+  margin-bottom: 10px;
+  height: 130px;
+  width: 100%;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: 1px solid #D1D1D1;
+  border-radius: 8px;
+  height: 22px;
+  width: 22px;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url(../images/IconCheck.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+  font: normal normal normal 16px/22px Nunito Sans;
+  color: #B2B2B2;
+  padding-left: 10px;
+}
+
+form p {
+  font: normal normal 300 12px/13px Open Sans;
+  color: #B2B2B2;
+  display: inline-block;
+  width: 100%;
+  margin-left: 10px;
+}
+
+@media all and (max-width: 865px) {
+  form p {
+    font: normal normal 300 8px/10px Open Sans;
+  }
+}
+
+.checkbox {
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+  .contact-section {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .contact-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .contact-section__form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-section__form--image {
+    width: 100%;
+    height: auto;
+  }
+  .contact-section__form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 0 70px 0;
+  }
+  .contact-section__container button {
+    padding: 10px 50px;
+    border-radius: 40px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 2px solid #FF0000;
+    background-color: white;
+    color: #FF0000;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+  }
+  input[type="text"], input[type="email"] {
+    margin-bottom: 10px;
+    height: 38px;
+    width: 100%;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+  }
+  textarea {
+    margin-bottom: 10px;
+    height: 90px;
+    width: 100%;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+  }
+  input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    height: 22px;
+    width: 22px;
+  }
+  input[type="checkbox"]:checked {
+    background-image: url(../images/IconCheck.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    font: normal normal normal 16px/22px Nunito Sans;
+    color: #B2B2B2;
+    padding-left: 10px;
+  }
+  form p {
+    font: normal normal 300 8px/10px Open Sans;
+    color: #B2B2B2;
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .checkbox {
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: #28272C;
+  height: 250px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer--left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-transform: uppercase;
+  font: normal normal bold 14px/19px Nunito Sans;
+}
+
+.footer__contact {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer__contact--firstColumn, .footer__contact--secondColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact--firstColumn span:hover, .footer__contact--secondColumn span:hover {
+  color: #FF0000;
+}
+
+.footer__contact span {
+  margin: 6px 0;
+}
+
+.footer__contact--secondColumn {
+  margin-left: 40px;
+}
+
+.footer__logo__name {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.footer--left .logo__car::before {
+  content: url(../images/Icon.svg);
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.footer--right {
+  align-self: flex-end;
+  margin-bottom: 40px;
+  font: normal normal 300 12px/16px Nunito Sans;
+  color: #D1D1D1;
+}
+
+@media all and (max-width: 800px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer__logo__name {
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .footer--right {
+    margin: 10px 0;
+  }
+}
